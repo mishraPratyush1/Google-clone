@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="shortcut icon" href="./google.png" type="image/x-icon">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-weight: 100;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            right: 3px;
+            top: 0;
+            list-style: none;
+        }
+        nav ul li{
+            margin: 10px;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li a img{
+            position: relative;
+            top: 0px;
+        }
+        .main a img{
+            position: relative;
+            top:-100px;
+            background-size: auto;
+            
+        }
+            .input{
+                position: absolute;
+                top: 290px;
+            
+            }
+            .input span.left img{
+               position: absolute;
+               top:5px;
+               z-index: 1;
+               left: 9px;
+               
+                
+            }
+            .input span.right img{
+               position: absolute;
+
+               top:8px;
+               z-index: 1;
+               right: 9px;
+               outline: none;
+               
+            }
+            @media screen and (max-width: 200px){
+                input{
+                    width: 400px !important;
+                    height: 35px;
+                    border-radius: 20px;
+                    border: 1px solid rgb(148, 132, 69);
+                    transition: 0.5s linear;
+    
+                }
+                .input{
+                    position: absolute;
+                    top: 345px;
+                
+                }
+                .buttons{
+                    position: absolute;
+                    top: 400px;
+                
+                }
+                .languages{
+                    position: absolute;
+                    top: 500px;
+                    word-wrap: none;
+                }
+                
+                
+            }
+            input{
+                width: 450px;
+                height: 35px;
+                border-radius: 20px;
+               
+                border: 0.1px solid rgb(189, 179, 179);
+                transition: 0.5s linear;
+                color: transparent;
+
+            }
+            input:hover{
+                box-shadow: 0 2px 9px rgb(63, 61, 61);
+            }
+            .buttons{
+                position: absolute;
+                top: 350px;
+            
+            }
+            .buttons button{
+                border: none;
+               height: 30px;
+               font-family: cursive;
+               letter-spacing: 1px;
+               width: 150px;
+               border-radius: 18px;
+               margin: 5px;
+            }
+            .languages{
+                position: absolute;
+                top: 400px;
+            }
+            .languages p span{
+                color: blue;
+                position: relative;
+                top: -2px;
+            }
+            .pic{
+                transform: translateY(-5px);
+                opacity: 1;
+            }
+            footer{
+                position: absolute;
+                top: 480px;
+                background-color: rgba(0,0,0,.1);
+            }
+            footer .india{
+                width: 102vw;
+                height: 30px;
+                font-size: 1em;
+                text-transform: capitalize;
+               
+            }
+            .india p{
+                position: relative;
+                left: 20px;
+                opacity: 0.65;
+            }
+            .privacy,.ad{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: -10px;
+                left: 20px;
+                height: 40px;
+            }
+            hr{
+                max-width: 95%;
+            }
+            li{
+                list-style: none;
+                margin-right: 10px;
+                text-transform: capitalize;
+                
+                
+            }
+            .privacy,.ad li{
+                opacity: 0.65;
+            }
+            
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl">Gmail</a></li>
+                <li><a href="https://www.google.co.in/imghp?hl=en&tab=wi&authuser=0&ogbl">images</a></li>
+                <li><a href="#"><img src="./grid.png"  alt="pic"></a></li>
+                <li ><a href="#"><img class="pic" src="./blackgoose.png" height="35px" width="35px" alt="pic"></a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="main">
+        <a href="https://www.google.com/search?sa=X&sxsrf=ALeKk00I7mmgz-DnMiUdhIaOh66HBpvCBA:1609514388138&q=Happy+New+Year!&oi=ddle&ct=166155174&hl=en&ved=0ahUKEwj_tfSqhPvtAhUSSX0KHYl9AYMQPQgN&biw=643&bih=612">
+            <div class="tooltip">
+                <img src="./main.gif" alt="">
+            </div>
+        </a><br><br><br><br><br>
+    </section>
+    <div class="input">
+        <span class="left">
+            <img src="./input.gif" height="25px" width="25px" alt="">
+        </span>
+        <input type="text">
+        <span class="right">
+            <img src="./mic.png" height="20px" width="20px" alt="">
+        </span>
+    </div>
+    <div class="buttons">
+        <button>
+            Google Search
+        </button>
+        <button>
+            I'm Feeling Lucky
+        </button>
+    </div>
+    <div class="languages">
+        <p><span>Google offered in:</span> हिन्दी &nbsp;বাংলা&nbsp; తెలుగు&nbsp; मराठी&nbsp; தமிழ்&nbsp; ગુજરાતી&nbsp;&nbsp;</p>
+    </div>
+    <footer>
+        <div class="india"><p>india</p></div><hr>
+        <div class="privacy">
+            <li>privacy</li>
+            <li>terms</li>
+            <li>settings</li>
+        </div>
+        <div class="ad">
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>About</li>
+            <li>How Search Works</li>
+        </div>
+    </footer>
+</body>
+</html>
